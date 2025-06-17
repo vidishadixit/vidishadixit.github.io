@@ -1,1 +1,1 @@
-# vidishadixitanalyst.github.io
+# vidishadixit.github.io
