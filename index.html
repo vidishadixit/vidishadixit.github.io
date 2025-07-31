@@ -19,7 +19,7 @@
     }
     main {
       padding: 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
     h1 {
@@ -34,9 +34,6 @@
     ul {
       list-style-type: none;
       padding: 0;
-    }
-    li {
-      margin-bottom: 10px;
     }
     a {
       color: #0366d6;
@@ -55,6 +52,46 @@
       padding: 10px;
       margin-top: 40px;
     }
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .project-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 16px;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .project-card h3 {
+      margin-top: 12px;
+      font-size: 20px;
+    }
+    .project-card p {
+      color: #555;
+      font-size: 14px;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -66,11 +103,26 @@
 
   <main>
     <h2>📊 Projects</h2>
-    <ul>
-      <li><a href="https://github.com/vidishadixit/DigitalHumanities" target="_blank">Digital Humanities – Artworks Data Analysis</a></li>
-      <li><a href="https://github.com/vidishadixit/Ecommerce-Sales-Analytics" target="_blank">E-Commerce Sales Analytics Project</a></li>
-      <li><a href="https://github.com/vidishadixit/Excel-Data-Cleaning" target="_blank">Data Cleaning in Excel</a></li>
-    </ul>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://raw.githubusercontent.com/vidishadixit/DigitalHumanities/main/cover.png" alt="Digital Humanities">
+        <h3>Digital Humanities</h3>
+        <p>Artworks Data Analysis</p>
+        <a href="https://github.com/vidishadixit/DigitalHumanities" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://raw.githubusercontent.com/vidishadixit/Ecommerce-Sales-Analytics/main/cover.png" alt="E-Commerce Analytics">
+        <h3>E-Commerce Analytics</h3>
+        <p>Sales Dashboard and Insights</p>
+        <a href="https://github.com/vidishadixit/Ecommerce-Sales-Analytics" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://raw.githubusercontent.com/vidishadixit/Excel-Data-Cleaning/main/cover.png" alt="Excel Cleaning">
+        <h3>Excel Data Cleaning</h3>
+        <p>Power Query Transformations</p>
+        <a href="https://github.com/vidishadixit/Excel-Data-Cleaning" target="_blank">View Project</a>
+      </div>
+    </div>
 
     <h2>🛠️ Skills</h2>
     <p>SQL, Python, Power BI, Tableau, Excel, MongoDB, Statistics, Advanced Excel, JIRA, Requirement Gathering, Agile & Waterfall Methodologies</p>
